@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando numeros</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: linear-gradient(to right, orange, yellow , orange);
+        }
+
+        #content{
+            border: 2px solid black;
+            margin: auto;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.479);
+        }
+
+        section{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+
+            padding: 20px;
+
+        }
+
+        article{
+            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.548), rgba(185, 181, 181, 0.459), rgba(105, 105, 105, 0.425));
+
+
+            margin-top: 20px;
+            margin-left: 20px;
+            margin: auto;
+
+
+            padding: 10px;
+            border: 2px solid black;
+            width: 60vw;
+            height: 30vh;
+        }
+
+        input{
+            width: 100px;
+            margin: 0px 10px;
+        }
+
+        #res, #res1, #res2, #res3{
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <main id="content">
+        <section>
+            <article>
+                <h1>Somando Valores</h1>
+                <input type="number" name="tnt1" id="itnt1">
+                <span> + </span>
+                <input type="number" name="tnt2" id="itnt2">
+                <input type="button" value="Somar" onclick="somar()">
+                <div id="res">
+                    <strong>Resultado</strong>
+                </div>
+            </article>
+            <article>
+                <h1>Multiplicando Valores</h2>
+                <input type="number" name="tnt3" id="itnt3">
+                <span> x </span>
+                <input type="number" name="tnt4" id="itnt4">
+                <input type="button" value="Multiplicar" onclick="multiplicar()">
+                <div id="res1">
+                    <strong>Resultado</strong>
+                </div>
+            </article>
+            <article>
+                <h1>Subtraindo Valores</h2>
+                <input type="number" name="tnt5" id="itnt5">
+                <span> - </span>
+                <input type="number" name="tnt6" id="itnt6">
+                <input type="button" value="Subtrair" onclick="subtrair()">
+                <div id="res2">
+                    <strong>Resultado</strong>
+                </div>
+            </article>
+            <article>
+                <h1>Dividindo Valores</h2>
+                <input type="number" name="tnt7" id="itnt7">
+                <span> / </span>
+                <input type="number" name="tnt8" id="itnt8">
+                <input type="button" value="Dividir" onclick="dividir()">
+                <div id="res3">
+                    <strong>Resultado</strong>
+                </div>
+
+            </article>
+        </section>
+    </main>
+
+    <script>
+
+        function somar(){
+        var tn1 = document.getElementById('itnt1')
+        var tn2 = document.getElementById('itnt2')
+        var res = document.getElementById('res')
+        var n1 = Number(tn1.value)
+        var n2 = Number(tn2.value)
+        var s = n1 + n2
+
+        res.innerHTML = `A soma entre ${n1} e ${n2} é igual a: ${s}`
+        }
+
+        function multiplicar(){
+            var tn3 = document.getElementById('itnt3')
+            var tn4 = document.getElementById('itnt4')
+            res = document.getElementById('res1')
+            var n1 = Number(tn3.value)
+            var n2 = Number(tn4.value)
+            var m = n1 * n2
+
+            res.innerHTML= `A multiplicaçao entre ${n1} e ${n2} é igual a: ${m}`
+            
+        }
+
+        function multiplicar(){
+            var tn3 = document.getElementById('itnt3')
+            var tn4 = document.getElementById('itnt4')
+            res = document.getElementById('res1')
+            var n1 = Number(tn3.value)
+            var n2 = Number(tn4.value)
+            var m = n1 * n2
+
+            res.innerHTML= `A multiplicaçao entre ${n1} e ${n2} é igual a: ${m}`
+        }
+
+        function subtrair(){
+            var tn5 = document.getElementById('itnt5')
+            var tn6 = document.getElementById('itnt6')
+            res = document.getElementById('res2')
+            var n1 = Number(tn5.value)
+            var n2 = Number(tn6.value)
+            var sb = n1 - n2
+
+            res.innerHTML= `A subtração entre ${n1} e ${n2} é igual a: ${sb}`
+        }
+
+        function dividir(){
+            var tn7 = document.getElementById('itnt7')
+            var tn8 = document.getElementById('itnt8')
+            res = document.getElementById('res3')
+            var n1 = Number(tn7.value)
+            var n2 = Number(tn8.value)
+            var d = n1 / n2
+
+            res.innerHTML= `A divisão entre ${n1} e ${n2} é igual a: ${d}`
+        }
+
+
+    </script>
+    
+</body>
+</html>

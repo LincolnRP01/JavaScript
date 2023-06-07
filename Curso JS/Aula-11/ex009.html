@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAIS</title>
+    <style>
+        *{
+            padding: 0px;       
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100%; 
+            width: 100%;
+            background-color: darkslategrey;
+        }
+
+        #content{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        #conteudo{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            
+            background-color: rgba(0, 0, 0, 0.473);
+            color: white;
+
+            border-radius: 20px;
+
+            width: 500px;
+            height: 200px;
+            
+            text-align: center;
+
+        }
+
+        #conteudo > h1{
+            margin: 20px 0px;
+        }
+
+        #res > p{
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <main id="contemt">
+        <div id="conteudo">
+            <h1>Qual nomenclatura eu recebo por morar em: </h1>
+            <label for="ipais">Digite o pais: </label><input type="text" name="txtpais" id="ipais">
+            <input type="button" value="Verificar" onclick="calcular()">
+            <div id="res">
+                <p>...Resultado...</p>
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+    function calcular(){
+        var txtpais = document.getElementById('ipais')
+        var pais = String(ipais.value)
+        var res = document.getElementById('res')
+        if(pais == 'Brasil'){
+            res.innerHTML = '<p><strong>Você é Brasileiro<strong></p>'
+        } else {
+            res.innerHTML = '<p><strong>Você é Estrangeiro<strong></p>'
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            
+        }
+
+
+        body, html{
+            background-color: darkorange;
+
+            width: 100vw;
+            height: 100vh;
+
+            position: relative;
+        }
+
+        main{
+            width: 50vw;
+
+            background-color: black;
+            color: white;
+
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            text-align: center;
+
+            padding: 40px;
+        }
+
+        main > h1{
+            font-size: 1.5em;
+        }
+
+        main > p{
+            font-size: 0.9em;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Olá, mundo!</h1>
+        <p>Me livrei da maldição </p>
+    </main>
+    <script>
+        /* 
+        Exemplo 01:
+        var n1 = window.prompt('Digite um numero: ')
+        var n2 = window.prompt('Digite outro numero: ')
+        var soma = n1 + n2
+        window.alert('A soma dos valores é: ' + soma) 
+        */
+
+        //Resultado n1n2
+        // Tal fato ocorreu pos ambas as variaveis sao strings, logo a funçao de '+' sera unir ambas 
+
+        var n1 = Number(window.prompt('Digite um numero: '))
+        var n2 = Number(window.prompt('Digite outro numero: '))
+        var soma = n1 + n2
+        window.alert(`A soma dos valores ${n1} e ${n2} é: ${soma}`)
+        //Resultado n1 + n2 
+    </script>
+    
+</body>
+</html>

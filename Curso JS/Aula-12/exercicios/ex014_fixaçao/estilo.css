@@ -1,0 +1,30 @@
+
+
+body{
+    background-image: linear-gradient(to right, rgb(0, 68, 255), blue, darkblue);
+    font: normal 16pt arial;
+}
+
+header{
+    text-align: center;
+    color: white;
+}
+
+main{
+    background-color: white;
+
+    width: 500px;
+    padding: 10px;
+
+    text-align: center;
+    margin: auto;
+
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.445);
+}
+
+footer{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+}

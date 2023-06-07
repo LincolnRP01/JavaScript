@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right, rgb(11, 11, 236), rgb(3, 187, 243), rgb(151, 218, 235));
+            color: white;
+            font: normal 18pt arial;
+        }
+
+        div{
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        #quadro{
+            border: 2px solid black;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="quadro">
+        <div id="m">Clique em min</div>
+        <hr>
+        <div class="m1">Clique em min</div>
+        <hr>
+        <div name="m2">Clique em min</div>
+        <hr>
+        <div id="m3">Clique em min</div>
+        <hr>
+    </div>
+
+    <script>
+        
+        /*Exemplo de Seleçao por marca
+        getElementsByTagName */
+        var p1 = document.getElementsByTagName('p')[1]
+        window.document.write(p1.innerHTML)
+        p1.style.textAlign = 'center'
+        p1.style.textDecoration = 'overline'
+        
+        /*Exemplo de seleçao por id
+        getElementsById */
+        var p2 = document.getElementById('m')
+        p2.style.background = 'black'
+        p2.style.color = 'Blue'
+
+        /*Exemplo de seleçao por class
+        getElementsByClassName */
+        var p3 = document.getElementsByClassName('m1')[0]
+        p3.style.background = 'Green'
+
+        /*Exemplo de seleçao por name
+        getElemtnsByName */
+        var p4 = document.getElementsByName('m2')[0]
+        p4.style.background = 'yellow'
+
+        /* Exemplo de seleçao por seletor
+        querySelector */
+        var p5 = document.querySelector('div#m3')
+        p5.style.background = 'gray'
+
+    </script>
+    
+</body>
+</html>
