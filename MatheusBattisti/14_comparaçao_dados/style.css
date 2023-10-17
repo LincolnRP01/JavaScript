@@ -1,0 +1,34 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: palevioletred;
+}
+
+main{
+    margin: auto;
+    text-align: center;
+    color: white;
+
+    position: relative;
+    
+    width: 60vw;
+    min-height: 100vh;
+
+    background-image: url(luiz.jpeg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    }
+
+    h1{
+        position: absolute;
+        top: 60%;
+        left: 40%;
+
+        font-size: 35pt;
+        font-style: oblique;
+
+    }
