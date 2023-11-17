@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imesao dev</title>
+    <style>
+        body {
+        font-family: "Roboto Mono", monospace;
+        text-align: center;
+        background-image: url("https://img.freepik.com/fotos-gratis/filas-de-assentos-vermelhos-em-um-teatro_53876-64710.jpg?size=626&ext=jpg&ga=GA1.1.1880011253.1699920000&semt=ais");
+        background-color: #000000;
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        }
+
+        .container {
+        text-align: center;
+        padding: 20px;
+        }
+
+        .page-title {
+        color: #ffffff;
+        margin: 0 0 5px;
+        }
+
+        .page-subtitle {
+        color: #ffffff;
+        margin-top: 5px;
+        }
+
+        .page-logo {
+        width: 200px;
+        }
+
+        .alura-logo {
+        width: 40px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        }
+
+        #listaFilmes img {
+        margin: 10px;
+        max-height: 250px;
+        }
+
+        .form-wrapper {
+        margin: 0 0 15px;
+        }
+
+        .form-wrapper input {
+        display: block;
+        margin: 0 auto;
+        padding: 10px 15px;
+        }
+
+        .form-wrapper button {
+        border: 0;
+        color: #ffffff;
+        background: #da1e26;
+        font-weight: bold;
+        padding: 15px 20px;
+        font-size: 16px;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+        }
+
+        .form-wrapper button:hover {
+        opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">
+          Filmeflix
+        </h1>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+        <p class="page-subtitle">
+          Qual seu filme favorito?
+        </p>
+        <div class="form-wrapper">
+          <input type="text" id="filme" name="filme" placeholder="Insira endereço de imagem">
+          <input type="text" id="titulo" name="titulo" placeholder="Insira o título do filme">
+          <input type="text" id="trailer" name="trailer" placeholder="Insira a URL do trailer">
+          <button onClick="adicionarFilme()">Adicionar Filme</button>
+        </div>
+    </div>
+    <div id="listaFilmes"></div>
+    <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    </a>
+    <div>
+        <a href=""><img src="" alt=""></a>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

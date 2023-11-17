@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imersão Dev</title>
+    <style>
+        * {
+    text-align: center;
+    }
+
+    body {
+    font-family: "Roboto Mono", monospace;
+    min-height: 400px;
+    background-image: url("https://www.pichauarena.com.br/wp-content/uploads/2023/08/F3L6fVbWcAMs7rx.jpg");
+    background-color: #111;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+
+    .container {
+    text-align: center;
+    padding: 20px;
+    height: 100vh;
+    }
+
+    .page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+    }
+
+    .page-subtitle {
+    color: #ffffff;
+    margin-top: 5px;
+    }
+
+    .page-logo {
+    width: 200px;
+    }
+
+    .alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    }
+
+    table {
+    border: 2px solid white;
+    border-collapse: collapse;
+    background-color: rgba(95, 95, 95, 0.527);
+    box-shadow: 2px 0px 4px;
+    }
+
+    h1 {
+    color: white;
+    }
+
+    th,
+    tr,
+    td {
+    border: solid 1px white;
+    color: white;
+    }
+
+    button {
+    background-color: #002351;
+    color: #f6f6f6;
+    }
+
+    #box button {
+    border: 0;
+    color: #ffffff;
+    background: #000000;
+    font-weight: bold;
+    padding: 12px 15px;
+    margin-top: 8px;
+    font-size: 13px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    }
+
+    input{
+    margin: 8px;
+    padding: 10px 20px;
+    }
+
+
+
+    </style>
+</head>
+<body>
+  <h1>Classificação CSS</h1>
+
+  <table style="width:100%">
+    <thead>
+      <tr>
+        <th>Nick</th>
+        <th>Kills</th>
+        <th>Assistencias</th>
+        <th>Mortes</th>
+        <th>Frag</th>
+        <th colspan="3">Ações</th>
+      </tr>
+    </thead>
+    <tbody id="tabelaJogadores">
+    </tbody>
+  </table>
+  <div id="box">
+    <input type="text" id="nomeJogador" placeholder="Insira o nome do Jogador">
+    <button onClick="adicionar()">Adicionar Jogador</button><br>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
