@@ -1,0 +1,9 @@
+Fonts used in this design:
+
+Font: Nadia Serif
+Author: Nadia Knechtle
+Url: http://www.fontsquirrel.com/fonts/nadia-serif
+
+Font: Vollkorn
+Author: FRiTZe
+Url: http://www.fontsquirrel.com/fonts/vollkorn

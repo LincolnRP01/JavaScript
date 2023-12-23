@@ -1,0 +1,147 @@
+/* Identificando elementos */
+.d1{
+    background-color: aqua;
+}
+.d2{
+    background-color: blueviolet;
+}
+.d3{
+    background-color: chocolate;
+}
+.d4{
+    background-color: darkgreen;    
+}
+.d5{
+    background-color: darkred;
+}
+.d6{
+    background-color: fuchsia;    
+}
+
+/* Ajustando a responsividade */
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+body{
+    margin: 5px;
+    font-size: 3vw;
+}
+
+@media screen and (max-width: 780px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .flex{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header{
+        display: flex;
+        width: 90vw;
+        height: 15vh;
+        margin: 5px;
+    }
+    
+    nav{
+        display: flex;
+        width: 90vw;
+        height: 15vh;
+        margin: 5px;
+    }
+    
+    article{
+        display: flex;
+        width: 90vw;
+        height: 42vh;
+        margin: 5px;
+    }
+    
+    section{
+        display: flex;
+        width: 90vw;
+        margin: 5px;
+    }
+    
+    aside{
+        display: flex;
+        width: 90vw;
+        margin: 5px;
+    }
+    
+    footer{
+        display: flex;
+        width: 90vw;
+        height: 15vh;
+        margin: 5px;
+    }  
+}
+
+/*Ajustando elementos semanticos*/
+
+header{
+    display: flex;
+    width: 44vw;
+    height: 15vh;
+    margin: 5px;
+}
+
+nav{
+    display: flex;
+    width: 44vw;
+    height: 15vh;
+    margin: 5px;
+}
+
+article{
+    display: flex;
+    width: 74vw;
+    height: 42vh;
+    margin: 5px;
+}
+
+section{
+    display: flex;
+    width: 74vw;
+    height: 20vh;
+    margin: 5px;
+}
+
+aside{
+    display: flex;
+    width: 14vw;
+    height: 62vh;
+    margin: 5px;
+}
+
+footer{
+    display: flex;
+    width: 89vw;
+    height: 15vh;
+    margin: 5px;
+}
+
+
+/*Ajustando texto*/
+.sr-reader{
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden;
+}

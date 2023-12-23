@@ -1,0 +1,83 @@
+body{
+    height: 100%;
+    margin: 0px 5px;
+    color: rgb(2, 119, 119);
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    display: flex; 
+    flex-direction: row;
+}
+
+a{
+    color: aliceblue;
+}
+
+fieldset{
+    border-radius: 5px;
+    border-color: black;
+    box-shadow: 3px 3px 3px;
+}
+
+form{
+    margin: 5px;
+    padding: 5px;
+}
+
+form input{
+    width: 30%;
+    height: 25px;
+    border-radius: 5px;
+}
+
+#button{
+    border-color: gray;
+    border-radius: 3px;
+    width: 120px !important;
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 45px;
+    /*
+    color: black !important; 
+    */
+}
+
+#esquerda{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+}
+
+#direita{
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+}
+
+#logo{
+    width: 300px;
+    height: auto;
+}
+
+
+
+
+/* Media
+@media screen and ( max-width: 700px ) {
+    body{
+        background-color: gray;
+    }
+}
+*/
+
+/* Unidade de medidas 
+-vw ocupa porcetagem de laargura da tela
+-vh ocupa porcetagem de altura da tela
+-vmin tera porcetagem da menor medida, altura ou largura
+-vmax tera porcetagem da maior medida, altura ou largura
+*/

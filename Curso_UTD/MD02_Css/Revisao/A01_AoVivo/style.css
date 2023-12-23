@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+
+/*Estilo de pagina principal*/
+body{
+    background-color: gray;
+}
+
+/*Regra por tag*/
+h{
+    color: darkslategray;
+}
+
+/*Regra por id*/
+#titulo{
+    color: darkslategray;
+}
+
+/*Regra por class*/
+.titulo{
+    color: darkslategray !important;
+    font-size: 2rem;
+}
+
+.caixa{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+}
+
+.caixa-preta{
+    width: 80px;
+    height: 80px;
+    background-color: black;
+}
