@@ -1,0 +1,9 @@
+.calendar th, td{
+    border: solid 1px black;
+    width:40px;
+    height: 30px;
+  }
+  
+  .calendar{
+    text-align:center;
+  }
