@@ -4,10 +4,9 @@ document.getElementById("botao").addEventListener(`click`, () => {
     
     const final = Number.parseInt(document.getElementById("final").value)
 
-    if(inicio <= 0 || inicio > 31){
+    if(inicio <= 0 || inicio > 31 || final <= 0 || final > 31){
         alert(`digite um numero valido`)
     }else {
-
         marcarCalendario(inicio, final)
     }
 })
